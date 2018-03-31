@@ -1,0 +1,84 @@
+<!--index.wxml-->
+# 语法
+<view class="className" data-name="A">
+  Hello, China!
+  <view>
+    Hello, World
+  </view>
+</view>
+
+
+# 数据绑定
+# 例1
+<view>
+  <text>{{message}}</text>
+</view>
+
+# 例2
+<view>
+  <text data-name="{{theName}}">
+  12313</text>
+</view>
+
+# 例3
+<view hidden='{{flag ? true : false }}'>
+  Hidden
+</view>
+
+
+# 列表渲染(block不是组件元素)
+<view>
+  <block wx:for="{{items}}" wx:for-item="item" wx-key="index">
+    <view>{{index}}::{{item.name}}</view>
+  </block>
+</view>
+
+
+# 条件渲染
+<!--index.wxml-->
+<view>今天吃什么？</view>
+<view wx:if="{{condition === 1}}">
+  饺子
+</view>
+<view wx:if="{{condition === 2}}">
+  米饭
+</view>
+<view wx:else>
+  面食
+</view>
+
+
+# 模版引用
+# 例1 template
+<!--index.wxml-->
+<template name= "tempItem">
+  <view>
+    <view>收件人：{{name}}</view>
+    <view>联系方式：{{phone}}</view>
+    <view>地址：{{address}}</view>
+  </view>
+</template>
+
+<template is="tempItem" data="{{...item}}"></template>
+
+# 例2 import
+<!--index.wxml-->
+<import src="a.wxml"></import>
+<template is="a"></template>
+
+<!--a.wxml-->
+<view>Hello, World</view>   不会显示这一行
+<template name="a">
+  Hello, China              会显示这一行，在作用域内
+</template>
+
+# 例3 include
+<!--index.wxml-->
+<include src="a.wxml" />
+<template is="a"></template>
+
+<!--a.wxml-->
+<template name="a">
+  This ia a.wxml              不会显示这一行
+</template>
+<view>Hello, World</view>     会显示这一行，在作用域内
