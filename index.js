@@ -40,6 +40,14 @@ Page({
   }
 })
 
+
+// index.js
+Page({
+  data: {
+      colorValue: 'red'
+    }
+})
+
 Math.random()     得到一个0到1到小数
 Math.floor()      向下取整
 
@@ -53,4 +61,13 @@ Page({
       address: "中国"
     }
   }
+})
+
+
+# 内联样式
+// index.js
+Page({
+  data: {
+      colorValue: 'red'
+    }
 })

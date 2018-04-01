@@ -36,8 +36,77 @@ CSS像素(CSS pixels)       :css 样式的虚拟像素
 PPI/DPI(pixel per inch)  :每英寸拥有的像素数
 DPR(devicepixelRatio)    :设备像素在某一方向上与CSS像素之比
 - 样式导入
+@import
 - 内联样式
+静态样式写入class，动态样式写入style；
 - 选择器
+| 选择器 | 样例  | 样例描述 |
+|-------|------|---------|
+| .class | .intro | 选择所有拥有class'intro'的组件|
+| #id | #firstname | 选择拥有id='firstname'的组件|
+| element | view | 选择所有view组件|
+| element,element| view, checkbox| 选择所有文档的view组件和所有的checkbox组件|
+| ::after | view::after | 在view组件后边插入内容|
+| ::before | view::before | 在view组件前边插入内容|
+
+选择器优先级(按权重值大小处理优先级)
+> !important     ∞
+  style          1000
+  #element       100
+  .element       10
+  element        1
+
+
+### Java Script
+一种轻量的、解释型的、面向对象的头等函数语言，是一种动态的基于原型和多范式的脚本语言，支持面向对象、命令式和函数式的编程风格。
+- Nodejs中的JavaScript三大模块
+> ECMAScript ：通过ECMA-262标准化的脚本程序设计语言
+  Native ：原生模块，具备一些Javascript没有的功能
+  NPM ：包管理系统，开源库
+
+- 小程序中的JavaScript三大模块
+> ECMAScript
+  小程序框架
+  小程序API
+
+- 浏览器中的JavaScript三大模块
+> ECMAScript
+  DOM
+  BOM
 
 ### WXS:
-### Java Script:
+- 模块
+- 变量
+- 注释
+>单行注释： // 单行注释
+ 多行注释： /* -- /*   多行注释
+
+- 运算符
+> 基本运算符
+  一元运算符
+  位运算符
+  比较运算符
+  等值运算符
+  赋值运算符
+  二元逻辑运算符
+
+- 语句
+- 数据类型
+> number
+  string
+  boolean
+  object
+  array
+  function
+  date
+  regexp
+
+- 基础类库
+> console，仅含log 方法
+  Math
+  JSON
+  Number
+  Date
+  Global
+
+### MINA框架
