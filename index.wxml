@@ -103,7 +103,32 @@
 
 
 # 内联样式
+# 例1
 <!--index.wxml-->
 <view style='width:500rpx;height:30px;background-color:{{colorValue}};'>
   Hello, World!
 </view>
+
+
+# 事件
+<!--index.wxml-->
+<view>
+  <view class='btn' bindtap="clickMe">
+    点击我
+  </view>
+</view>
+
+
+# 例2
+<!--index.wxml-->
+<view class='container-A' bindtap='clickA'>
+  container-A
+  <view class='container-B' bindtap='clickB'>
+    container-B
+    <view class='container-C' bindtap='clickC'>
+      container-C
+    </view>
+  </view>
+</view>
+
+

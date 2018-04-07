@@ -71,3 +71,30 @@ Page({
       colorValue: 'red'
     }
 })
+
+
+# 事件
+# 例1
+// index.js
+Page({
+  clickMe(e){
+    console.log(e)
+  }
+})
+
+
+# 例2
+// index.js
+Page({
+  clickA(){
+    console.log('click container-A')
+  },
+  clickB() {
+    console.log('click container-B')
+  },
+  clickC() {
+    console.log('click container-C')
+  }
+})
+
+

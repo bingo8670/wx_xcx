@@ -110,3 +110,19 @@ DPR(devicepixelRatio)    :设备像素在某一方向上与CSS像素之比
   Global
 
 ### MINA框架
+
+
+### 路由
+
+### 事件流
+事件是视图层到逻辑层到通讯方式；
+事件可以将用户到行为反馈到逻辑层进行处理；
+事件可以绑定在组件上，触发事件后，就会执行逻辑层中对应到事件处理函数；
+事件对象可以携带额外信息；
+
+事件流程：事件捕获阶段---事件处理阶段---事件冒泡阶段
+
+可捕获事件：touchstart, touchmove, touchcancel, touchend, tap, longpress, longtap
+可冒泡事件：touchstart, touchmove, touchcancel, touchend, tap, longpress, longtap, transitionend, animationstart, animationiteration, touchforcechange
+
+
