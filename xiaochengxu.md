@@ -126,3 +126,32 @@ DPR(devicepixelRatio)    :设备像素在某一方向上与CSS像素之比
 可冒泡事件：touchstart, touchmove, touchcancel, touchend, tap, longpress, longtap, transitionend, animationstart, animationiteration, touchforcechange
 
 
+
+### 组件
+组件是视图层的基本组成单元；
+组件自带一下功能与微信风格的样式；
+一个组件同上包括：开始标签和结束标签，属性用来修饰这个组件，内容在两个标签之内；
+
+组件的八种类型：
+- 视图容器
+  - view
+  - scroll-view
+  - swiper
+  - movable-view
+  - cover-view
+
+- 基础内容
+  - icon
+  - text
+  - rich-text
+  - progress
+
+- 表单组件
+- 导航
+- 媒体组件
+- 地图
+- 开放能力
+- 画布
+
+
+视图容器组件：
