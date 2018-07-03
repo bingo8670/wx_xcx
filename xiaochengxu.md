@@ -147,9 +147,27 @@ DPR(devicepixelRatio)    :设备像素在某一方向上与CSS像素之比
   - progress
 
 - 表单组件
+  - button
+  - picker
+  - checkbox
+  - picker-view
+  - form
+  - radio
+  - input
+  - switch
+  - label
+  - text-area
 - 导航
+  - navigato
 - 媒体组件
+  - audio
+  - image
+  - video
+  - live-player
+  - camera
+  - live-pusher
 - 地图
+  - map
 - 开放能力
 - 画布
 
