@@ -169,7 +169,18 @@ DPR(devicepixelRatio)    :设备像素在某一方向上与CSS像素之比
 - 地图
   - map
 - 开放能力
+  - open-data
+  - web-view
 - 画布
+  - canvas
 
 
-视图容器组件：
+### API
+- 网络
+- 媒体
+- 文件
+- 数据缓存
+- 位置
+- 设备
+- 界面
+- 开放接口
