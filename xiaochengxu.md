@@ -184,3 +184,19 @@ DPR(devicepixelRatio)    :设备像素在某一方向上与CSS像素之比
 - 设备
 - 界面
 - 开放接口
+
+#### 规则
+- wx.on
+- Object参数
+- wx.get/wx.set
+
+success
+fail
+complete
+
+直调函数
+回调函数
+
+**HTTP** 是基于TCP/IP通信协议通过万维网服务器传输数据到本地浏览器到应用层协议；
+
+**websocket** 是由HTML5规范提出到一种在单个TCP连接上进行全双工通信到应用层协议；
